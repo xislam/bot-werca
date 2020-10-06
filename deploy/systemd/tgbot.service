@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram Bot daemon
+After=network.target
+
+[Service]
+User=www
+Group=www
+WorkingDirectory=/home/www/td/
+Environment="PYTHONPATH=/home/www/td/"
+ExecStart=/home/www/td/.venv/bin/python /home/www/td/tga/manage.py bot
+ExecStart=/home/www/td/.venv/bin/python /home/www/td/tga/manage.py dot1
+ExecStart=/home/www/td/.venv/bin/python /home/www/td/tga/manage.py runserver
+
+[Install]
+WantedBy=multi-user.target
