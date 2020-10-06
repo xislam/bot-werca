@@ -74,7 +74,7 @@ async def new_1(message: types.Message):
 
 @dp.message_handler(text='_НАЗАД_')
 async def new_1(message: types.Message):
-    await message.reply(text1, reply_markup=markup2)
+    await message.reply(text1, reply_markup=markup1)
 
 
 
@@ -100,7 +100,7 @@ async def new_1(message: types.Message):
 
 @dp.message_handler(text='_НАЗАД')
 async def new_1(message: types.Message):
-    await message.reply(text1, reply_markup=markup2)
+    await message.reply(text1, reply_markup=markup1)
 
 markup3 = ReplyKeyboardMarkup(resize_keyboard=True).row(for_partners_buttons1,
                                                         for_partners_buttons2).row(for_partners_buttons3)
@@ -122,7 +122,7 @@ async def new_1(message: types.Message):
 
 @dp.message_handler(text='Назад_')
 async def new_1(message: types.Message):
-    await message.reply(text1, reply_markup=markup2)
+    await message.reply(text1, reply_markup=markup1)
 
 
 markup4 = ReplyKeyboardMarkup(resize_keyboard=True).row(help_buttons1, help_buttons2).row(help_buttons3)
