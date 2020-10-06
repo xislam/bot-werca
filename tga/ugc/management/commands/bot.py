@@ -12,7 +12,7 @@ from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
-bot = Bot(token='1233819640:AAFQrsZViUx1kAEs3uqprxyXt3oFZeGm2_c')
+bot = Bot(token='1396506839:AAGC8G-3J_4xHHcYZsyuw-uha8zTvpZ68yc')
 dp = Dispatcher(bot)
 
 
